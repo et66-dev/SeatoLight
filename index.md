@@ -38,7 +38,7 @@ A story about endurance, loyalty, and showing up — even when the road is long.
 **Buy directly via Venmo**
 
 💛 **Venmo:** `@EileenTublin`  
-💛 **Price:** $25 
+💛 **Price:** $13 + shipping fees 
 
 **In the Venmo note, please include:**
 - “Maple Runs a Marathon”
