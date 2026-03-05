@@ -164,6 +164,30 @@ nav {
   background-color: #a96b48;
 }
 
+.book-details {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  margin-bottom: 1.5rem;
+}
+
+.order-info {
+  background: #fdf5ee;
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.order-info p {
+  font-size: 0.9rem;
+  color: #5a5a5a;
+  margin-bottom: 0.5rem;
+}
+
+.venmo-note {
+  font-size: 0.82rem;
+  color: #8a8a8a;
+}
+
 /* Footer */
 footer {
   text-align: center;
