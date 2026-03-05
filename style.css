@@ -170,22 +170,122 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-.order-info {
-  background: #fdf5ee;
-  border-radius: 8px;
-  padding: 1rem 1.2rem;
-  margin-top: 0.5rem;
+/* Meet Maple Section */
+#meet-maple {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
 }
 
-.order-info p {
-  font-size: 0.9rem;
+#meet-maple h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+}
+
+#meet-maple h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#meet-maple p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+/* Adventures Section */
+#adventures {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 2rem 5rem;
+}
+
+#adventures h2 {
+  font-family: 'Lora', serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1rem;
   color: #5a5a5a;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 
-.venmo-note {
-  font-size: 0.82rem;
-  color: #8a8a8a;
+.adventure-card {
+  display: flex;
+  gap: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.adventure-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.adventure-card img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.adventure-content h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 0.75rem;
+}
+
+.adventure-content p {
+  font-size: 0.95rem;
+  color: #5a5a5a;
+  margin-bottom: 1rem;
+}
+
+.why-maple {
+  background: #fdf5ee;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.why-maple h3 {
+  font-family: 'Lora', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+}
+
+.why-maple p {
+  font-size: 0.95rem;
+  color: #5a5a5a;
+  margin-bottom: 0.75rem;
+}
+
+.why-maple p:last-child {
+  margin-bottom: 0;
 }
 
 /* Footer */
@@ -207,7 +307,22 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .adventure-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .adventure-card img {
+    width: 160px;
+  }
+
   nav {
     padding: 1rem 1.5rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.85rem;
   }
 }
