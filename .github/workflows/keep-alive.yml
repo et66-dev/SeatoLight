@@ -1,0 +1,25 @@
+name: Keep Codespace Alive
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:    # Allows manual triggering
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Update timestamp
+        run: |
+          echo "Last activity: $(date)" >> keep-alive.txt
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add keep-alive.txt
+          git commit -m "Keep codespace alive" || echo "No changes to commit"
+          git push
